@@ -1,0 +1,39 @@
+doctype html
+html
+  head
+    title Produce Price List
+    link rel="stylesheet" href="style.css"
+
+  body
+    header
+      .logo.nap
+        img src="napoli.png"
+      .address
+        p Napoli Foods, Inc.
+        p 10 Knotter Drive, Cheshire, CT 06410
+      .title
+        h1 Produce Price List
+      .week
+        p = "Week of #{@monday}"
+        p.phone Phone (860) 276-4000 &middot; Fax (860) 276-4040 
+      .logo.fer
+        img src="ferraro.svg"
+
+    main
+      - for cat in @categories.values
+        section
+          table#items cellspacing=0 cellpadding=0
+            tr
+              th
+              th
+                h2 = cat
+              th
+            - for item in @grouped_items[cat]
+                tr
+                  td.id = item.id
+                  td.description = item.description
+                  td.price = "%.2f" % item.price
+
+    footer
+      p Pricing &amp; availability subject to change due to market conditions.
+      p We carry over 300 fresh produce items that arrive daily, please inquire!

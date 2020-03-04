@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+html {
+  font-family: 'Segoe UI';
+  font-size: 10pt;
+}
+
+main {
+  margin: 1em;
+  max-height: 98em;
+}
+
+section {
+  margin: 0.4em 2em;
+  padding: 0;
+
+  border-bottom: 1px solid #aaccaa;
+  background-color: #f1f9f1;
+  border-radius: 0.3em;
+  break-inside: avoid;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.week {
+  text-align: right;
+}
+
+.logo {
+  padding: 10px;
+  flex-grow: 0;
+}
+
+.logo.nap img {
+  height: 42px;
+}
+
+.logo.fer img {
+  height: 30px;
+}
+
+.title {
+  flex-grow: 1;
+}
+
+
+header, footer {
+  padding: 0.5em;
+  background-color: #222244;
+  color: white;
+  font-size: 1.1rem;
+}
+
+header p, footer p {
+  margin: 0.5em;
+}
+
+footer {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  line-height: 1.4rem;
+  font-size: 2.8rem;
+}
+
+h2 {
+  color: #555588;
+  font-size: 1.1rem;
+  margin: 0;
+  margin-bottom: 0.15em;
+}
+
+main {
+  column-count: 2;
+}
+
+/* ----------------------------------------- */
+
+tr:nth-child(even) {
+  background-color: #d9e9d9;
+}
+
+th, td {
+  padding: 0.2em;
+}
+
+th {
+  text-align: left;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+td.id {
+  width: 4em;
+  text-align: right;
+  color: #555588;
+}
+
+td.description {
+  width: 30em;
+}
+
+td.price {
+  width: 4em;
+  text-align: right;
+  font-weight: bold;
+}
+
+.phone {
+  font-size: 0.8rem;
+}
