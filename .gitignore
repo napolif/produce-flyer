@@ -1,2 +1,4 @@
 /output/*
 /ignore/*
+tags
+.DS_Store
