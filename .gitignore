@@ -1,4 +1,7 @@
 /output/*
 /ignore/*
+
+data/prices.csv
+
 tags
 .DS_Store
